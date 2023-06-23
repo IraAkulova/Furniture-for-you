@@ -1,5 +1,6 @@
 // import { useEffect, useState } from 'react';
 // import { Link, useLocation } from 'react-router-dom';
+import css from './Home.module.css';
 
 // const KEY = '136e9303af57d83b29ddf02ef48e9efe';
 // const BASE_URL = `https://api.themoviedb.org/3/trending/all/day?api_key=${KEY}`;
@@ -26,13 +27,17 @@ const Home = () => {
     return (
       <div>
         {/* {error && films.length === 0 && <h2>{error.message}</h2>} */}
-        <div>
-          <h1>Make your interior more minimalistic & modern</h1>
-          <h3>
+        <div className={css.hero}>
+          <h1 className={css.heroHeader}>
+            Make your interior more minimalistic & modern
+          </h1>
+          <h3 className={css.heroDescr}>
             Turn your room with panto into a lot more minimalist and modern with
             ease and speed
           </h3>
-          <button type="button">Contact Us</button>
+          <button className={css.heroBtn} type="button">
+            Contact Us
+          </button>
           {/* {films.length > 0 && */}
           {/* (<ul>
               {films.map(film => {
