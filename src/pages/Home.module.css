@@ -1,18 +1,15 @@
 .hero{
-    /* margin-top: 100; */
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     background-image: url(../../public/hero.png);
     background-size: cover;
-    width: 1440px;
     height: 1084px;
 }
 .heroHeader{
     margin: 0;
     padding-top: 300px;
-    padding-left: 2%;
+    padding-left: 100px;
     width: 861px;
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
@@ -26,7 +23,7 @@
     font-size: 16px;
     font-weight: 700;
     text-align: center;
-    color: #E58411;
+    color: rgb(67, 65, 75);
 }
 .heroBtn{
     margin-top: 130px;
@@ -35,9 +32,13 @@
     height: 60px;
     border-radius: 4px;
     border-color: transparent;
-    background-color: rgb(67, 65, 75);
+    background-color:#E58411;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     text-align: center;
     color: #ffffff;
+    cursor: pointer;
+}
+.heroBtn:hover{
+    background-color:#fa9314;
 }
