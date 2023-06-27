@@ -7,7 +7,7 @@ const Advantages = () => {
       <ul>
         <li>
           <img
-            src="../../images/1.jpg"
+            src="./1.jpg"
             alt="Kitchen"
             width="370"
             height="294"
@@ -37,7 +37,7 @@ const Advantages = () => {
         </li>
         <li>
           <img
-            src="../../images/1.jpg"
+            src="./1.jpg"
             alt="Kitchen"
             width="370"
             height="294"
