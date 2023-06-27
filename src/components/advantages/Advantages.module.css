@@ -1,0 +1,10 @@
+.advantagesContainer{
+    width: 1440px;
+}
+.advantagesHeader{
+    display: none;
+}
+.advantageImg{
+    width: 100px;
+    height: auto;
+}

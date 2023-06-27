@@ -2,7 +2,7 @@ import css from './Hero.module.css';
 
 const Hero = () => {
     return (
-        <div className={css.hero}>
+        <section className={css.hero}>
             <h1 className={css.heroHeader}>
                 Make your interior more minimalistic & modern
             </h1>
@@ -13,7 +13,7 @@ const Hero = () => {
             <button className={css.heroBtn} type="button">
                 Contact Us
             </button>
-        </div>
+        </section>
     );
 };
 

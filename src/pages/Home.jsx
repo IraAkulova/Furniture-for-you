@@ -1,11 +1,11 @@
-// import css from './Home.module.css';
+import css from './Home.module.css';
 import Hero from '../components/hero/Hero';
 import Features from '../components/features/Features';
 import Advantages from '../components/advantages/Advantages'
 
 const Home = () => {    
     return (
-      <div>
+      <div className={css.homeContainer}>
         <Hero/>
         <Features/>
         <Advantages/>

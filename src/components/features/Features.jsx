@@ -2,7 +2,7 @@ import css from "./Features.module.css";
 
 const Features = () => {
     return (
-      <div className={css.featuresContainer}>
+      <section className={css.featuresContainer}>
         <h2 className={css.featuresHeader}>Why Choosing Us</h2>
         <ul className={css.features}>
           <li className={css.feature}>
@@ -27,7 +27,7 @@ const Features = () => {
             </p>
           </li>
         </ul>
-      </div>
+      </section>
     );
 };
 
