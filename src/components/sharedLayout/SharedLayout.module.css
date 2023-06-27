@@ -1,7 +1,7 @@
 .sharedHeader{
     display: flex;
     position: fixed;
-    width: 100%;
+    width: 1440px;
     justify-content: space-between;
     top: 0;
     height: 100px;
