@@ -9,22 +9,23 @@
 }
 .advantage{
     display: flex;
-    gap: 80px;
+    justify-content: space-around;
 }
 .advantage:not(:last-child){
     margin-bottom: 80px;
 }
 .advantage:nth-child(1){
-    margin-left: -50px;
+    margin-left: -150px;
 }
 .advantage:nth-child(2){
     flex-direction: row-reverse;
-    margin-right: -50px;
+    margin-right: -150px;
 }
 .advantageImg{
     border-radius: 30px;
 }
 .advantageText{
+    margin-top: 90px;
     width: 556px;
     height: 132px;
 }

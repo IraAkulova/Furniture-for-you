@@ -12,7 +12,7 @@
     display: flex;
     gap: 50px;
     align-items: center;
-    padding-left: 40%;
+    padding-left: 120px;
     top: 0;
     left: 0;
     text-decoration: none;
@@ -27,5 +27,11 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 100px;
+}
+.footer{
+    display: block;
+    max-width: 1440px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #E58411;
 }

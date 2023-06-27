@@ -6,15 +6,12 @@ import Button from '../button/Button';
 
 const SharedLayout = () => {
   return (
-    <div>
+    <>
       <div className={css.sharedHeader}>
         <nav className={css.navigation}>
           <NavLink to="/" className={css.link}>
             Home
           </NavLink>
-          {/* <NavLink to="/movies" className={css.link}>
-          Movies
-        </NavLink> */}
           <NavLink to="/portfolio" className={css.link}>
             Portfolio
           </NavLink>
@@ -34,7 +31,14 @@ const SharedLayout = () => {
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
-    </div>
+      <div className={css.footer}>
+        <p>Social Networks</p>
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+    </>
   );
 };
 
