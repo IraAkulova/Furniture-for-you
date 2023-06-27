@@ -32,11 +32,36 @@ const SharedLayout = () => {
         <Outlet />
       </Suspense>
       <div className={css.footer}>
-        <p>Social Networks</p>
-        <ul>
-          <li>Facebook</li>
-          <li>Instagram</li>
-        </ul>
+        <p>Copyright © 2023</p>
+        <div className={css.social}>
+          <p>Follow us:</p>
+          <ul>
+            <li className={css.socialItem}>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg className={css.socialIcon}>
+                  <use href="./icons.svg#icon-instagram"></use>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li className={css.socialItem}>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg className={css.socialIcon}>
+                  <use href="./icons.svg#icon-facebook"></use>
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   );

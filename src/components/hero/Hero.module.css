@@ -3,9 +3,8 @@
     align-items: center;
     flex-direction: column;
     background-image: url(../../../public/hero.png);
-    background-size: cover;
-    max-width: 1440px;
-    height: 1084px;
+    background-size: 1440px;
+    height: 1070px;
     box-shadow: 0px 1px 1px rgba(180, 114, 27, 0.12), 0px 4px 4px rgba(180, 114, 27, 0.06), 1px 4px 6px rgba(180, 114, 27, 0.16);
 }
 .heroHeader{

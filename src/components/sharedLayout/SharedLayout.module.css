@@ -1,7 +1,7 @@
 .sharedHeader{
     display: flex;
     position: fixed;
-    width: 1440px;
+    max-width: 1440px;
     justify-content: space-between;
     top: 0;
     height: 100px;
@@ -28,10 +28,34 @@
     padding: 0;
     margin: 0;
     margin-right: 100px;
+    margin-left: 670px;
 }
 .footer{
-    display: block;
-    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1240px;
+    height: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+    font-weight: 200;
     background-color: rgba(0, 0, 0, 0.8);
     color: #E58411;
+}
+.social{
+    display: flex;
+    gap: 30px;
+}
+.socialIcon{
+    content: "";
+  fill: #E58411;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+}
+span{
+    padding-left: 10px;
+    font-weight: 200;
+    text-align: center;
 }
