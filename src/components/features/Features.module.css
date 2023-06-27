@@ -1,0 +1,29 @@
+.featuresContainer{
+    display: flex;
+    gap: 130px;
+    width: 1440px;
+    padding: 120px 80px 120px 80px;
+}
+.featuresHeader{
+    padding-top: 38px;
+    width: 242px;
+    font-size: 34px;
+}
+.features{
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.feature{
+    width: 284px;
+}
+.featureTitle{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.featureDesc{
+    font-size: 14px;
+    line-height: 2;
+}

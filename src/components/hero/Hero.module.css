@@ -19,15 +19,15 @@
 }
 .heroDescr{
     width: 500px;
-    padding-top: 30px;
+    margin-top: 250px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
-    color: rgb(67, 65, 75);
+    color: #ffffff;
 }
 .heroBtn{
-    margin-top: 130px;
+    margin-top: 50px;
     margin-left: 30px;
     width: 160px;
     height: 60px;
