@@ -1,8 +1,8 @@
 .featuresContainer{
     display: flex;
     gap: 130px;
-    width: 1440px;
-    padding: 120px 80px 120px 80px;
+    max-width: 1440px;
+    padding: 120px 80px 0px 80px;
 }
 .featuresHeader{
     padding-top: 38px;

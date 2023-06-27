@@ -5,19 +5,19 @@ const Advantages = () => {
     <section className={css.advantagesContainer}>
       <h2 className={css.advantagesHeader}>Our advantages</h2>
       <ul>
-        <li>
+        <li className={css.advantage}>
           <img
             src="./1.jpg"
             alt="Kitchen"
-            width="370"
-            height="294"
+            width="600"
             className={css.advantageImg}
           />
           <div className={css.advantageText}>
             <h3
               style={{
+                marginBottom: 20,
                 color: "#E58411",
-                fontSize: 12,
+                fontSize: 16,
                 fontWeight: 400,
                 textTransform: "uppercase",
               }}
@@ -35,19 +35,19 @@ const Advantages = () => {
             </p>
           </div>
         </li>
-        <li>
+        <li className={css.advantage}>
           <img
             src="./1.jpg"
             alt="Kitchen"
-            width="370"
-            height="294"
+            width="600"
             className={css.advantageImg}
           />
           <div className={css.advantageText}>
             <h3
               style={{
+                marginBottom: 20,
                 color: "#E58411",
-                fontSize: 12,
+                fontSize: 16,
                 fontWeight: 400,
                 textTransform: "uppercase",
               }}
