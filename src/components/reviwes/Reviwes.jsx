@@ -1,51 +1,44 @@
+import css from "./Reviwes.module.css";
+
 const Reviwes = () => {
   return (
-    <section>
-      <h2>Our Client Reviews</h2>
-      <ul>
-        <li>
-          <div>
-            <div>
-              <img src="#" alt="" />
-              <h6>Bang Upin</h6>
-              <p>
-                Bang Upin Pedagang Asongan “Terimakasih banyak, kini ruanganku
-                menjadi lebih mewah dan terlihat mahal“
-              </p>
-              <div>
-                <span>Stars</span>
-              </div>
-            </div>
-          </div>
+    <section className={css.reviwesContainer}>
+      <h2 className={css.reviwesHeader}>Our Client Reviews</h2>
+      <ul className={css.reviwes}>
+        <li className={css.reviweCard}>
+          <img src="./photo1.jpg" alt="Smiling man" width="250" />
+          <h6 className={css.name}>Bang Upin</h6>
+          <p className={css.reviwe}>
+            Bang Upin Pedagang Asongan “Terimakasih banyak, kini ruanganku
+            menjadi lebih mewah dan terlihat mahal“
+          </p>
+          <span>Stars</span>
         </li>
-        <li>
-          <div>
-            <div>
-              <img src="#" alt="" />
-              <h6>Ibuk Sukijan</h6>
-              <p>
-                “Makasih Panto, aku sekarang berasa tinggal di apartment karena
-                barang-barang yang terlihat mewah“
-              </p>
-              <div>
-                <span>Stars</span>
-              </div>
-            </div>
-          </div>
+        <li className={css.reviweCard}>
+          <img src="./photo2.jpg" alt="Girl" width="250" />
+          <h6 className={css.name}>Bang Upin</h6>
+          <p className={css.reviwe}>
+            Bang Upin Pedagang Asongan “Terimakasih banyak, kini ruanganku
+            menjadi lebih mewah dan terlihat mahal“
+          </p>
+          <span>Stars</span>
         </li>
-        <li>
-          <div>
-            <div>
-              <img src="#" alt="" />
-              <h6>Mpok Ina</h6>
-              <p>
-                “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
-              </p>
-              <div>
-                <span>Stars</span>
-              </div>
-            </div>
-          </div>
+        <li className={css.reviweCard}>
+          <img src="./photo3.jpg" alt="Man" width="250" />
+          <h6 className={css.name}>Ibuk Sukijan</h6>
+          <p className={css.reviwe}>
+            “Makasih Panto, aku sekarang berasa tinggal di apartment karena
+            barang-barang yang terlihat mewah“
+          </p>
+          <span>Stars</span>
+        </li>
+        <li className={css.reviweCard}>
+          <img src="./photo4.jpg" alt="Man in glasses" width="250" />
+          <h6 className={css.name}>Mpok Ina</h6>
+          <p className={css.reviwe}>
+            “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
+          </p>
+          <span>Stars</span>
         </li>
       </ul>
     </section>
