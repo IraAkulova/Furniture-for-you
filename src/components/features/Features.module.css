@@ -2,8 +2,24 @@
     display: flex;
     gap: 130px;
     max-width: 1440px;
-    padding: 120px 80px 0px 80px;
+    margin: 0 auto 0 auto;
+    padding: 80px;
 }
+/* @media screen and (min-width: 480px) {
+  .featuresContainer {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .featuresContainer {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .featuresContainer {
+    max-width: 1440px;
+  }
+} */
 .featuresHeader{
     padding-top: 38px;
     width: 242px;

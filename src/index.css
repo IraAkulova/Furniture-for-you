@@ -32,6 +32,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container {
+  /* border: red 2px solid; */
+  max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+}
 .active{
   color: #E58411;
 }
