@@ -12,7 +12,7 @@ const Reviwes = () => {
             Bang Upin Pedagang Asongan “Terimakasih banyak, kini ruanganku
             menjadi lebih mewah dan terlihat mahal“
           </p>
-          <span>Stars</span>
+          <div className={css.stars}>Stars</div>
         </li>
         <li className={css.reviweCard}>
           <img src="./photo2.jpg" alt="Girl" width="250" />
@@ -21,7 +21,7 @@ const Reviwes = () => {
             Bang Upin Pedagang Asongan “Terimakasih banyak, kini ruanganku
             menjadi lebih mewah dan terlihat mahal“
           </p>
-          <span>Stars</span>
+          <div className={css.stars}>Stars</div>
         </li>
         <li className={css.reviweCard}>
           <img src="./photo3.jpg" alt="Man" width="250" />
@@ -30,7 +30,7 @@ const Reviwes = () => {
             “Makasih Panto, aku sekarang berasa tinggal di apartment karena
             barang-barang yang terlihat mewah“
           </p>
-          <span>Stars</span>
+          <div className={css.stars}>Stars</div>
         </li>
         <li className={css.reviweCard}>
           <img src="./photo4.jpg" alt="Man in glasses" width="250" />
@@ -38,7 +38,7 @@ const Reviwes = () => {
           <p className={css.reviwe}>
             “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
           </p>
-          <span>Stars</span>
+          <div className={css.stars}>Stars</div>
         </li>
       </ul>
     </section>
