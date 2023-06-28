@@ -1,12 +1,13 @@
 import OurWorks from "../components/ourWorks/OurWorks"
 import Reviwes from "../components/reviwes/Reviwes";
+import css from "./Portfolio.module.css"
 
 const Portfolio = () => {
   return (
-    <>
-      <OurWorks/>
-      <Reviwes/>
-    </>
+    <div className={css.portfolioContainer}>
+      <OurWorks />
+      <Reviwes />
+    </div>
   );
 };
 
