@@ -1,0 +1,21 @@
+.contactsContainer{
+    display: flex;
+    max-width: 1440px;
+    height: 70vh;
+    border-top: 100px solid rgba(0, 0, 0, 0.8);
+    background-color: #eeeeee;
+}
+.contactsTitles{
+    padding: 100px;
+    line-height: 3;
+}
+.contacts{
+    padding: 100px 0px;
+    line-height: 3;
+}
+.contacts a{
+    color: rgba(0, 0, 0, 0.8);
+}
+.contacts a:hover{
+    color: #E58411;
+}
