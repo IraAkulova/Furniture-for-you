@@ -47,6 +47,10 @@
     display: flex;
     gap: 30px;
 }
+.socialItems{
+    display: flex;
+    gap: 30px;
+}
 .socialIcon{
     content: "";
   fill: #E58411;

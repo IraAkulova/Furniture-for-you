@@ -35,8 +35,8 @@ const SharedLayout = () => {
         <p>Copyright © 2023</p>
         <div className={css.social}>
           <p>Follow us:</p>
-          <ul>
-            <li className={css.socialItem}>
+          <ul className={css.socialItems}>
+            <li>
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
@@ -48,7 +48,7 @@ const SharedLayout = () => {
                 <span>Instagram</span>
               </a>
             </li>
-            <li className={css.socialItem}>
+            <li>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"

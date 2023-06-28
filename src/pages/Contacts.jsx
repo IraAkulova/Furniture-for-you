@@ -27,7 +27,7 @@ const Contacts = () => {
           </a>
         </li>
         <li className={css.contact}>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a href="mailto:info@devstudio.com">info@furniture4u.com</a>
         </li>
         <li className={css.contact}>
           <a href="tel:+380961111111">+38 096 111 11 11</a>
