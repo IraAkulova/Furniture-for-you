@@ -1,6 +1,7 @@
 .reviwesContainer{
     margin-top: 100px;
-    padding: 50px 80px 0px 80px;
+    padding: 50px 80px 50px 80px;
+    background-color: #F7F7F7;
 }
 .reviwesHeader{
     width: 400px;
