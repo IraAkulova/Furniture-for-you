@@ -1,6 +1,6 @@
-import css from "./Reviwes.module.css";
+import css from "./Reviewes.module.css";
 
-const Reviwes = () => {
+const Reviewes = () => {
   return (
     <section className={css.reviwesContainer}>
       <h2 className={css.reviwesHeader}>Our Client Reviews</h2>
@@ -45,4 +45,4 @@ const Reviwes = () => {
   );
 };
 
-export default Reviwes;
+export default Reviewes;
