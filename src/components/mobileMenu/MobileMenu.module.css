@@ -1,0 +1,214 @@
+.headerNavBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .header-nav__button {
+    display: none;
+  }
+}
+.menuContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1999;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 48px 40px;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  transform: translateX(200%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggler {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu__item, .mobile-contacts__item {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.mobile-menu__link--active {
+  color: #2196f3;
+}
+.mobile-menu__link:hover {
+  color: #2196f3;
+}
+
+.mobile-contacts__tel {
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.mobile-contacts__mail {
+  color: #757575;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.mobile-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mobile-social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2196f3;
+}
+
+.header-nav-container {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-nav-container {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-nav {
+  margin: 0px 87px 0px 96px;
+}
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    margin: 0px 315px 0px 96px;
+  }
+}
+
+.header-nav__list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-nav__link {
+  display: block;
+  position: relative;
+  padding: 32px 0px;
+  color: #212121;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-nav__link:hover, .header-nav__link:focus {
+  color: #2196f3;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  bottom: -1.5%;
+  left: 0;
+  background-color: #2196f3;
+}
+
+.header-list .current {
+  color: #2196f3;
+}
+
+.contacts {
+  margin: 21px auto;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link:hover, .contacts__link:focus {
+  color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contacts__icon.mail {
+  width: 14px;
+  height: 10px;
+}
+
+.contacts__icon.phone {
+  width: 10px;
+  height: 14px;
+}

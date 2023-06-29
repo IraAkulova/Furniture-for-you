@@ -1,25 +1,15 @@
 import { NavLink } from "react-router-dom";
+import css from "./MobileMenu.module.css"
 
-const MobileMenu = () => {
-    
+const MobileMenu = ({ toggleMenu }) => {
+
   return (
     <>
-      <button
-        type="button"
-        className="header-nav__button js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-        js-open-menu
-      >
-        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-          <use class="header-nav__menu" href="./menu.svg#icon-menu"></use>
-        </svg>
-      </button>
-      <div className="menu-container js-menu-container">
-        <button type="button" class="menu-toggler js-close-menu">
+      <div className={css.menuContainer}>
+        <button type="button" onClick={toggleMenu}>
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use
-              class="header-nav__cross"
+              className={css.iconCross}
               href="./menu.svg#icon-close-menu"
             ></use>
           </svg>
@@ -27,7 +17,7 @@ const MobileMenu = () => {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/portfolio">Portfolio</NavLink>
         <NavLink to="/contacts">Contacts</NavLink>
-        <ul class="mobile-social">
+        {/* <ul class="mobile-social">
           <li class="mobile-social__item">
             <a
               class="mobile-social__link"
@@ -48,7 +38,7 @@ const MobileMenu = () => {
               Facebook
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </>
   );

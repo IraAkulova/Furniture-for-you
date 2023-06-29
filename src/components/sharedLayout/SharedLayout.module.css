@@ -7,12 +7,21 @@
     height: 100px;
     background-color: rgba(0, 0, 0, 0.1);
 }
+.logo{
+  display: block;
+  width: 40px;
+  height: 40px;
+  /* margin-top: 30px; */
+  /* margin-left: 170px; */
+  border: none;
+  background-color: transparent;
+  fill: #E58411;
+}
 .navigation{
     display: none;
     gap: 20px;
     align-items: center;
     justify-content: space-around;
-    /* padding-left: 50px; */
     top: 0;
     left: 0;
     text-decoration: none;
@@ -29,39 +38,20 @@
     margin: 0;
     margin-right: 50px;
 }
-@media screen and (min-width: 768px) {
-  .navigation, .authBtns {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .navigation, .authBtns {
-    display: flex;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .navigation {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    /* padding-left: 120px; */
-    font-size: 20px;
-    font-weight: 700;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .authBtns {
-    display: flex;
-    align-items: center;
-    margin-right: 110px;
-  }
+.burgerMenuBtn{
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 170px;
+  border: none;
+  background-color: transparent;
+  fill: #E58411;
 }
 .footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* max-width: 1240px; */
     height: 100px;
     padding-left: 30px;
     padding-right: 30px;
@@ -69,18 +59,6 @@
     font-weight: 200;
     background-color: rgba(0, 0, 0, 0.8);
     color: #E58411;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    font-size: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
 }
 .social{
     display: flex;
@@ -106,11 +84,44 @@ span{
     text-align: center;
 }
 @media screen and (min-width: 768px) {
+  .navigation, .authBtns {
+    display: flex;
+  }
+  .burgerMenuBtn{
+  display: none;
+  }
+  .footer {
+    font-size: 16px;
+  }
   span {
     display: inline;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
+  .navigation, .authBtns {
+    display: flex;
+    align-items: center;
+  }
+    .burgerMenuBtn{
+  display: none;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+    .authBtns {
+    display: flex;
+    align-items: center;
+    margin-right: 110px;
+  }
+  .footer {
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
   span {
     display: inline;
   }

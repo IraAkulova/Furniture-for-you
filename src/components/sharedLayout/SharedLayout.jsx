@@ -1,13 +1,35 @@
-import { Outlet, NavLink } from 'react-router-dom';
-import { Suspense } from 'react';
-import css from './SharedLayout.module.css';
-import Loader from '../../components/loader/Loader';
+import { Outlet, NavLink } from "react-router-dom";
+import { Suspense, useState } from "react";
+import css from "./SharedLayout.module.css";
+import Loader from "../../components/loader/Loader";
+import MobileMenu from "../mobileMenu/MobileMenu";
 // import Button from '../button/Button';
 
 const SharedLayout = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <>
       <div className={css.sharedHeader}>
+        <div>
+          <svg width="40" height="40" aria-label="Логотип" className={css.logo}>
+            <use href="../../../public/chair.svg"></use>
+          </svg>
+        </div>
+        {!showMenu && (
+          <button
+            type="button"
+            onClick={toggleMenu}
+            className={css.burgerMenuBtn}
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use href="./menu.svg#icon-menu"></use>
+            </svg>
+          </button>
+        )}
+        {showMenu && <MobileMenu toggleMenu={toggleMenu} showMenu={showMenu} />}
         <nav className={css.navigation}>
           <NavLink to="/" className={css.link}>
             Home
@@ -19,31 +41,6 @@ const SharedLayout = () => {
             Contacts
           </NavLink>
         </nav>
-        {/* {isLoggedIn ? (
-          <div style={{ display: "flex" }}>
-            <p>Welcome, {name}!</p>
-            <button type="button" onClick={() => dispatch(operations.logOut())}>
-              Log out
-            </button>
-          </div>
-        ) : (
-          <div>
-            <NavLink to="/register" className={css.link}>
-              Registration
-            </NavLink>
-            <NavLink to="/login" className={css.link}>
-              Login
-            </NavLink>
-          </div>
-        )} */}
-        {/* <ul className={css.authBtns}>
-          <li>
-            <Button text={"Register"} />
-          </li>
-          <li>
-            <Button text={"Login"} />
-          </li>
-        </ul> */}
       </div>
       <Suspense fallback={<Loader />}>
         <Outlet />
