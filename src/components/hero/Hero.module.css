@@ -9,43 +9,38 @@
     height: 1070px;
     box-shadow: 0px 1px 1px rgba(180, 114, 27, 0.12), 0px 4px 4px rgba(180, 114, 27, 0.06), 1px 4px 6px rgba(180, 114, 27, 0.16);
 }
-/* @media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .hero {
-    max-width: 1440px;
-  }
-} */
-
 .heroHeader{
     margin: 0;
     padding-top: 300px;
-    width: 861px;
+    width: 300px;
     font-family: 'Poppins', sans-serif;
-    font-size: 48px;
+    font-size: 30px;
     text-align: center;
     color: #ffffff;
 }
 .heroDescr{
-    width: 500px;
+    width: 300px;
     margin-top: 250px;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     text-align: center;
     color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .heroHeader {
+    width: 861px;
+    font-size: 48px;
+  }
+  .heroDescr {
+    width: 500px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
 .heroBtn{
     margin-top: 50px;
-    margin-left: 30px;
+    margin-left: 15px;
     width: 160px;
     height: 60px;
     border-radius: 4px;
@@ -57,6 +52,6 @@
     color: #ffffff;
     cursor: pointer;
 }
-.heroBtn:hover{
+.heroBtn:hover, .heroBtn:focus{
     background-color:#fa9314;
 }

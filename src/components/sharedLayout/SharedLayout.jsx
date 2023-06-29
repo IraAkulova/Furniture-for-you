@@ -2,7 +2,7 @@ import { Outlet, NavLink } from 'react-router-dom';
 import { Suspense } from 'react';
 import css from './SharedLayout.module.css';
 import Loader from '../../components/loader/Loader';
-import Button from '../button/Button';
+// import Button from '../button/Button';
 
 const SharedLayout = () => {
   return (
@@ -19,14 +19,31 @@ const SharedLayout = () => {
             Contacts
           </NavLink>
         </nav>
-        <ul className={css.authBtns}>
+        {/* {isLoggedIn ? (
+          <div style={{ display: "flex" }}>
+            <p>Welcome, {name}!</p>
+            <button type="button" onClick={() => dispatch(operations.logOut())}>
+              Log out
+            </button>
+          </div>
+        ) : (
+          <div>
+            <NavLink to="/register" className={css.link}>
+              Registration
+            </NavLink>
+            <NavLink to="/login" className={css.link}>
+              Login
+            </NavLink>
+          </div>
+        )} */}
+        {/* <ul className={css.authBtns}>
           <li>
             <Button text={"Register"} />
           </li>
           <li>
             <Button text={"Login"} />
           </li>
-        </ul>
+        </ul> */}
       </div>
       <Suspense fallback={<Loader />}>
         <Outlet />
