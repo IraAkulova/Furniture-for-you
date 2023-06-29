@@ -16,7 +16,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     text-align: center;
-    color: #ffffff;
+    color: #424242;
 }
 .heroDescr{
     width: 300px;
@@ -31,6 +31,7 @@
   .heroHeader {
     width: 861px;
     font-size: 48px;
+    color: #ffffff;
   }
   .heroDescr {
     width: 500px;
