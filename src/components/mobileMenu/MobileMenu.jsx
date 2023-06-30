@@ -19,9 +19,15 @@ const MobileMenu = ({ openMenuBtn }) => {
           </svg>
         </button>
         <div className={css.mobileNav}>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/portfolio">Portfolio</NavLink>
-          <NavLink to="/contacts">Contacts</NavLink>
+          <NavLink to="/" onClick={openMenuBtn}>
+            Home
+          </NavLink>
+          <NavLink to="/portfolio" onClick={openMenuBtn}>
+            Portfolio
+          </NavLink>
+          <NavLink to="/contacts" onClick={openMenuBtn}>
+            Contacts
+          </NavLink>
         </div>
 
         <ul className={css.mobileSocial}>
