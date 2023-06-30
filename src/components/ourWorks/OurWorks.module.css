@@ -16,15 +16,15 @@
     gap: 30px;
 }
 .work{
-    width: 500px;
+    /* width: 500px; */
     border: solid 1px #eeeeee;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     border-radius: 4px;
     background-color: #eeeeee;
 }
-.workImg{
+/* .workImg{
     width: 500px;
-}
+} */
 .workTitle{
     text-align: center;
     padding-top: 20px;
@@ -43,9 +43,7 @@
     padding: 30px 80px 0px 80px;
 }
 .worksHeader{
-    /* width: 242px; */
     margin-bottom: 20px;
-    /* margin-left: 180px; */
     font-size: 28px;
 }
 .work, .workImg{
@@ -57,9 +55,7 @@
     padding: 50px 80px 0px 80px;
 }
 .worksHeader{
-    /* width: 242px; */
     margin-bottom: 50px;
-    /* margin-left: 500px; */
     font-size: 34px;
 }
 }
