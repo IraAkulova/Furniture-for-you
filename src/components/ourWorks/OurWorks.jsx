@@ -6,7 +6,12 @@ const OurWorks = () => {
       <h2 className={css.worksHeader}>Our works</h2>
       <ul className={css.works}>
         <li className={css.work}>
-          <img src="./1.jpg" alt="Kitchen" width="500" />
+          <img
+            src="./1.jpg"
+            alt="Kitchen"
+            width="500"
+            className={css.workImg}
+          />
           <h5 className={css.workTitle}>Name</h5>
           <p className={css.workDescr}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -18,7 +23,12 @@ const OurWorks = () => {
           </p>
         </li>
         <li className={css.work}>
-          <img src="./1.jpg" alt="Kitchen" width="500" />
+          <img
+            src="./1.jpg"
+            alt="Kitchen"
+            width="500"
+            className={css.workImg}
+          />
           <h5 className={css.workTitle}>Name</h5>
           <p className={css.workDescr}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
@@ -31,7 +41,12 @@ const OurWorks = () => {
           </p>
         </li>
         <li className={css.work}>
-          <img src="./1.jpg" alt="Kitchen" width="500" />
+          <img
+            src="./1.jpg"
+            alt="Kitchen"
+            width="500"
+            className={css.workImg}
+          />
           <h5 className={css.workTitle}>Name</h5>
           <p className={css.workDescr}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos porro
@@ -41,7 +56,12 @@ const OurWorks = () => {
           </p>
         </li>
         <li className={css.work}>
-          <img src="./1.jpg" alt="Kitchen" width="500" />
+          <img
+            src="./1.jpg"
+            alt="Kitchen"
+            width="500"
+            className={css.workImg}
+          />
           <h5 className={css.workTitle}>Name</h5>
           <p className={css.workDescr}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime rem
