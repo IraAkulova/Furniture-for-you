@@ -19,7 +19,7 @@
 }
 .navigation{
     display: none;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     justify-content: space-around;
     top: 0;
@@ -87,6 +87,7 @@ span{
 @media screen and (min-width: 768px) {
   .navigation, .authBtns {
     display: flex;
+    gap: 50px;
   }
   .burgerMenuBtn{
   display: none;
