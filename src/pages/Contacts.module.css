@@ -1,21 +1,70 @@
 .contactsContainer{
+    display: block;
+    max-width: 1440px;
+    border-top: 100px solid rgba(0, 0, 0, 0.8);
+    background-color: #eeeeee;
+}
+.contactsMap{
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+.contacts{
+    display: flex;
+}
+.contactsTitles{
+    width: 100px;
+    padding: 10px;
+    line-height: 2;
+    font-size: 12px;
+}
+.contactsList{
+    width: 150px;
+    padding: 10px 0px;
+    line-height: 2;
+    font-size: 12px;
+}
+.contact a{
+    color: rgba(0, 0, 0, 0.8);
+}
+.contact a:hover{
+    color: #E58411;
+}
+@media screen and (min-width: 768px) {
+    .contactsContainer{
+    display: flex;
+    height: 70vh;
+}
+.contactsMap{
+    width: 450px;
+    height: 350px;
+}
+.contacts{
+    display: flex;
+}
+.contactsTitles{
+    padding: 50px;
+}
+.contactsList{
+    padding: 50px 0px;
+}
+}
+@media screen and (min-width: 1440px) {
+    .contactsContainer{
     display: flex;
     max-width: 1440px;
     height: 70vh;
-    border-top: 100px solid rgba(0, 0, 0, 0.8);
-    background-color: #eeeeee;
+}
+.contactsMap{
+    width: 600px;
+    height: 450px;
 }
 .contactsTitles{
     padding: 100px;
     line-height: 3;
 }
-.contacts{
+.contactsList{
     padding: 100px 0px;
     line-height: 3;
 }
-.contacts a{
-    color: rgba(0, 0, 0, 0.8);
-}
-.contacts a:hover{
-    color: #E58411;
 }
