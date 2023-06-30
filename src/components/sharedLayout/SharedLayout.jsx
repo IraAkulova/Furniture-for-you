@@ -7,21 +7,21 @@ import MobileMenu from "../mobileMenu/MobileMenu";
 
 const SharedLayout = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const toggleMenu = () => {
+  const openMenuBtn = () => {
     setShowMenu(!showMenu);
   };
   return (
     <>
       <div className={css.sharedHeader}>
-        <div>
+        {/* <div>
           <svg width="40" height="40" aria-label="Логотип" className={css.logo}>
             <use href="../../../public/chair.svg"></use>
           </svg>
-        </div>
+        </div> */}
         {!showMenu && (
           <button
             type="button"
-            onClick={toggleMenu}
+            onClick={openMenuBtn}
             className={css.burgerMenuBtn}
           >
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
@@ -29,7 +29,7 @@ const SharedLayout = () => {
             </svg>
           </button>
         )}
-        {showMenu && <MobileMenu toggleMenu={toggleMenu} showMenu={showMenu} />}
+        {showMenu && <MobileMenu openMenuBtn={openMenuBtn} showMenu={showMenu} />}
         <nav className={css.navigation}>
           <NavLink to="/" className={css.link}>
             Home
