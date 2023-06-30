@@ -1,6 +1,7 @@
 .contactsContainer{
     display: block;
     max-width: 1440px;
+    height: 71vh;
     border-top: 100px solid rgba(0, 0, 0, 0.8);
     background-color: #eeeeee;
 }
