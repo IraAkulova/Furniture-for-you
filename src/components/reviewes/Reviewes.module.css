@@ -16,7 +16,7 @@
 }
 .reviweCard{
     width: 300px;
-        margin: 0px auto;
+    margin: 0px auto;
     border: solid 1px #eeeeee;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     border-radius: 4px;
@@ -26,7 +26,8 @@
     width: 300px;
 }
 .name{
-    padding: 20px 0px 0px 70px;
+    padding-top: 20px;
+    text-align: center;
     color: #E58411;
     font-size: 20px;
     font-weight: 300;
@@ -41,7 +42,7 @@
 .stars{
     width: 100px;
     height: 20px;
-    margin: 20px 75px;
+    margin: 20px auto;
     background-color: yellow;
     text-align: center;
 }
