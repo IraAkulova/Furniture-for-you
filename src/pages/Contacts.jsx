@@ -9,7 +9,7 @@ const Contacts = () => {
         width="600"
         height="450"
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
         className={css.contactsMap}
       ></iframe>
       <div className={css.contacts}>

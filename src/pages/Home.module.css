@@ -1,5 +1,5 @@
 .homeContainer{
-    /* max-width: 1440px; */
+    /* max-width: 1200px; */
     overflow-x: hidden;
 }
 
@@ -13,8 +13,8 @@
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .homeContainer {
-    max-width: 1440px;
+    max-width: 1200px;
   }
 } */

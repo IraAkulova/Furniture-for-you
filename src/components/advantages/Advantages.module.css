@@ -1,8 +1,9 @@
 .advantagesContainer{
   display: none;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto 0 auto;
     padding: 50px 0px;
+    overflow-x: hidden;
     background-color: #F7F7F7;
 }
 .advantagesHeader{
@@ -44,10 +45,10 @@
     line-height: 2;
 }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .advantagesContainer {
     display: block;
-    max-width: 1440px;
+    max-width: 1200px;
   }
   .advantageText{
     margin-top: 90px;

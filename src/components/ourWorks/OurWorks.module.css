@@ -14,6 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 }
 .work{
     width: 500px;
@@ -46,11 +47,11 @@
     margin-bottom: 20px;
     font-size: 28px;
 }
-.work, .workImg{
+/* .work, .workImg{
     width: 600px;
+} */
 }
-}
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .worksContainer{
     padding: 50px 80px 0px 80px;
 }

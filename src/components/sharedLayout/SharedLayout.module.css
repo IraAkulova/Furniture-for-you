@@ -100,7 +100,7 @@ span{
     display: inline;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .navigation, .authBtns {
     display: flex;
     align-items: center;

@@ -59,7 +59,7 @@
     width: 280px;
 }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .reviwesContainer{
     margin-top: 100px;
     padding: 50px 80px 50px 80px;
