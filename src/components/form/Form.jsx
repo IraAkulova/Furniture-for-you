@@ -1,7 +1,7 @@
 import css from "../form/ContactForm.module.css";
 import axios from "axios";
 
-// const BASE_URL = "mongodb+srv://iraakulova2019:Svastika-666@cluster0.ia47zme.mongodb.net/";
+const BASE_URL = "https://furniture4u.onrender.com";
 
 const ContactForm = () => {
   const handleInputChange = (e) => {
