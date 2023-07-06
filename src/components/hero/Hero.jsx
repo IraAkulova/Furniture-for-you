@@ -12,9 +12,7 @@ const Hero = () => {
 
     return (
       <section className={css.hero}>
-        {showModal && (
-          <Modal toggleModal={toggleModal} />
-        )}
+        {showModal && <Modal toggleModal={toggleModal} />}
         <h1 className={css.heroHeader}>
           Make your interior more minimalistic & modern
         </h1>
@@ -22,7 +20,7 @@ const Hero = () => {
           Turn your room with panto into a lot more minimalist and modern with
           ease and speed
         </h3>
-        <button className={css.heroBtn} type="button">
+        <button className={css.heroBtn} type="button" onClick={()=>{setShowModal(true);}}>
           Contact Us
         </button>
       </section>

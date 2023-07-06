@@ -1,70 +1,75 @@
-import css from "../form/ContactForm.module.css";
+import css from "../form/Form.module.css";
+import { useState } from "react";
 import axios from "axios";
 
 axios.defaults.baseURL = "https://furniture4u.onrender.com";
 
 const ContactForm = () => {
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
   const handleInputChange = (e) => {
-    // switch (e.target.name) {
-    //   case "name":
-    //     name = e.target.value;
-    //     break;
+    switch (e.target.name) {
+      case "name":
+        setName(e.target.value);
+        break;
 
-    //   case "number":
-    //     number = e.target.value;
-    //     break;
+      case "phone":
+        setPhone(e.target.value);
+        break;
 
-    //   default:
-    //     return;
-    // }
+      default:
+        return;
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const form = e.target;
       try {
-        const response = await axios.post("/contacts", {
-          name: form.name,
-          phone: form.phone,
-        });
+        const response = await axios.post("/api/contacts", {name, phone});
       return response.data;
       } catch (error) {
-        console.log(error);
-      };
-    
-    form.reset();
+        console.log(error.message);
+    };
+    setName('');
+    setPhone('');
+    console.log(name);
   };
 
   return (
-    <form onSubmit={handleSubmit} className={css.contactForm}>
-      <label className={css.field}>
+    <form onSubmit={handleSubmit} className={css.form}>
+      <label className={css.label}>
         Name
         <br></br>
         <input
           type="text"
           name="name"
-          //   value={name}
+          value={name}
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
           onChange={handleInputChange}
+          className={css.field}
+          placeholder="Type your name"
         />
       </label>
-      <label className={css.field}>
+      <label className={css.label}>
         Number
         <br></br>
         <input
           type="tel"
           name="phone"
-          //   value={number}
+          value={phone}
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
           onChange={handleInputChange}
+          className={css.field}
+          placeholder="Type your phone number"
         />
       </label>
-      <button type="submit">Add contact</button>
+      <button type="submit" className={css.submBtn}>
+        Contact me
+      </button>
     </form>
   );
 };
