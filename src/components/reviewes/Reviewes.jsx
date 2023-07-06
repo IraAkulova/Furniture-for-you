@@ -21,8 +21,14 @@ console.log(reviews);
     <section className={css.reviewsContainer}>
       <h2 className={css.reviewsHeader}>Our Client Reviews</h2>
       <ul className={css.reviews}>
-        {reviews.map(({ _id, name, comment }) => (
+        {reviews.map(({ _id, name, comment, avatarURL }) => (
           <li className={css.reviewCard} key={_id}>
+            <img
+              src={avatarURL}
+              alt="Genereted avatar"
+              width="250"
+              className={css.reviewImg}
+            />
             <h6 className={css.name}>{name}</h6>
             <p className={css.review}>{comment}</p>
           </li>
