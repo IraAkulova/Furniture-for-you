@@ -1,20 +1,20 @@
-.reviwesContainer{
+.reviewsContainer{
     margin-top: 100px;
     padding: 20px 20px 0px;
     background-color: #F7F7F7;
 }
-.reviwesHeader{
+.reviewsHeader{
     margin-bottom: 10px;
     font-size: 24px;
     text-align: center;
     color: rgba(0, 0, 0, 0.8);
 }
-.reviwes{
+.reviews{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
-.reviweCard{
+.reviewCard{
     width: 300px;
     margin: 0px auto;
     border: solid 1px #eeeeee;
@@ -22,7 +22,7 @@
     border-radius: 4px;
     background-color: #eeeeee;
 }
-.reviweImg{
+.reviewImg{
     width: 300px;
 }
 .name{
@@ -32,9 +32,9 @@
     font-size: 20px;
     font-weight: 300;
 }
-.reviwe{
+.review{
     padding: 20px;
-    height: 20px;
+    /* height: 20px; */
     font-size: 12px;
     font-weight: 400;
     text-align: justify;
@@ -47,28 +47,28 @@
     text-align: center;
 }
 @media screen and (min-width: 768px) {
-    .reviwesContainer{
+    .reviewsContainer{
     margin-top: 100px;
     padding: 50px 80px 50px 80px;
 }
-.reviwesHeader{
+.reviewsHeader{
     margin-bottom: 50px;
     font-size: 34px;
 }
-.reviweCard, .reviweImg{
+.reviewCard, .reviewImg{
     width: 280px;
 }
 }
 @media screen and (min-width: 1200px) {
-    .reviwesContainer{
+    .reviewsContainer{
     margin-top: 100px;
     padding: 50px 80px 50px 80px;
 }
-.reviwesHeader{
+.reviewsHeader{
     margin-bottom: 50px;
     font-size: 34px;
 }
-.reviweCard, .reviweImg{
+.reviewCard, .reviewImg{
     width: 280px;
 }
 }
