@@ -31,9 +31,9 @@ const MobileMenu = ({ openMenuBtn }) => {
         </div>
 
         <ul className={css.mobileSocial}>
-          <li class="mobile-social__item">
+          <li>
             <a
-              class="mobile-social__link"
+              
               href="https://www.instagram.com/"
               rel="noopener noreferrer nofollow"
               target="_blank"
@@ -44,9 +44,9 @@ const MobileMenu = ({ openMenuBtn }) => {
               Instagram
             </a>
           </li>
-          <li class="mobile-social__item">
+          <li >
             <a
-              class="mobile-social__link"
+              
               href="https://www.facebook.com/"
               rel="noopener noreferrer nofollow"
               target="_blank"
