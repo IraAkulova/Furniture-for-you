@@ -7,20 +7,26 @@ axios.defaults.baseURL = "https://furniture4u.onrender.com";
 
 const Reviewes = () => {
   const [reviews, setReviews] = useState([]);
-  useEffect(() => {
+  const [page, setPage] = useState(1);
+    const buttonClickHandler = () => {
+      setPage(page + 1);
+      console.log(page);
+    };
+  useEffect((page) => {
     axios
-      .get("/api/reviews")
+      .get(`/api/reviews?page=${page}&limit=3`)
       .then((response) => {
         setReviews((prevRev) => [...prevRev, ...response.data.data.reviews]);
       })
       .catch((error) => console.log(error.message));
-  }, []);
+  }, [page]);
 
     const [showModal, setShowModal] = useState(false);
 
     const toggleModal = () => {
       setShowModal(!showModal);
-    };
+  };
+
 
   return (
     <section className={css.reviewsContainer}>
@@ -40,6 +46,13 @@ const Reviewes = () => {
           </li>
         ))}
       </ul>
+      <button
+        type="button"
+        className={css.reviewBtn}
+        onClick={buttonClickHandler}
+      >
+        More reviews
+      </button>
       <button
         type="button"
         className={css.reviewBtn}
