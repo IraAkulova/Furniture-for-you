@@ -8,11 +8,8 @@ axios.defaults.baseURL = "https://furniture4u.onrender.com";
 const Reviewes = () => {
   const [reviews, setReviews] = useState([]);
   const [page, setPage] = useState(1);
-    const buttonClickHandler = () => {
-      setPage(page + 1);
-      console.log(page);
-    };
-  useEffect((page) => {
+
+  useEffect(() => {
     axios
       .get(`/api/reviews?page=${page}&limit=3`)
       .then((response) => {
@@ -26,6 +23,9 @@ const Reviewes = () => {
     const toggleModal = () => {
       setShowModal(!showModal);
   };
+      const buttonClickHandler = () => {
+        setPage(page + 1);
+      };
 
 
   return (
