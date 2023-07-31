@@ -15,6 +15,10 @@
     gap: 40px;
 }
 .reviewCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     margin: 0px auto;
     border: solid 1px #eeeeee;
@@ -23,7 +27,9 @@
     background-color: #eeeeee;
 }
 .reviewImg{
-    width: 300px;
+    width: 80px;
+    margin-top: 20px;
+
 }
 .name{
     padding-top: 20px;
@@ -72,7 +78,7 @@
     margin-bottom: 50px;
     font-size: 34px;
 }
-.reviewCard, .reviewImg{
+.reviewCard{
     width: 280px;
 }
 .reviewBtn{
@@ -89,7 +95,7 @@
     margin-bottom: 50px;
     font-size: 34px;
 }
-.reviewCard, .reviewImg{
+.reviewCard{
     width: 280px;
 }
 .reviewBtn{

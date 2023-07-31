@@ -8,12 +8,13 @@ axios.defaults.baseURL = "https://furniture4u.onrender.com";
 const Reviewes = () => {
   const [reviews, setReviews] = useState([]);
   const [page, setPage] = useState(1);
+  const [prevRev, setPrevRev] = useState([]);
 
   useEffect(() => {
     axios
       .get(`/api/reviews?page=${page}&limit=3`)
       .then((response) => {
-        setReviews((prevRev) => [...prevRev, ...response.data.data.reviews]);
+        setReviews((prevRev) => {setPrevRev([...prevRev]); return [...prevRev, ...response.data.data.reviews]});
       })
       .catch((error) => console.log(error.message));
   }, [page]);
@@ -46,13 +47,15 @@ const Reviewes = () => {
           </li>
         ))}
       </ul>
-      <button
-        type="button"
-        className={css.reviewBtn}
-        onClick={buttonClickHandler}
-      >
-        More reviews
-      </button>
+      {prevRev.length !== reviews.length && (
+        <button
+          type="button"
+          className={css.reviewBtn}
+          onClick={buttonClickHandler}
+        >
+          More reviews
+        </button>
+      )}
       <button
         type="button"
         className={css.reviewBtn}
