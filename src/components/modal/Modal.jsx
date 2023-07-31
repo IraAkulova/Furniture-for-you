@@ -29,7 +29,7 @@ const Modal = ({ toggleModal }) => {
   return createPortal(
     <div className={css.overlay} onClick={handleOverlayClick}>
       <div className={css.modal}>
-        <ContactForm/>
+        <ContactForm toggleModal={toggleModal} />
       </div>
     </div>,
     modalRoot

@@ -4,9 +4,9 @@ import axios from "axios";
 
 axios.defaults.baseURL = "https://furniture4u.onrender.com";
 
-const ContactForm = () => {
-  const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+const ContactForm = ({ toggleModal }) => {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const handleInputChange = (e) => {
     switch (e.target.name) {
       case "name":
@@ -24,15 +24,15 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-      try {
-        const response = await axios.post("/api/contacts", {name, phone});
+    try {
+      const response = await axios.post("/api/contacts", { name, phone });
+          setName("");
+          setPhone("");
+          toggleModal();
       return response.data;
-      } catch (error) {
-        console.log(error.message);
-    };
-    setName('');
-    setPhone('');
-    console.log(name);
+    } catch (error) {
+      console.log(error.message);
+    }
   };
 
   return (

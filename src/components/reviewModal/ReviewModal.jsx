@@ -29,7 +29,7 @@ const ReviewModal = ({ toggleModal }) => {
   return createPortal(
     <div className={css.overlay} onClick={handleOverlayClick}>
       <div className={css.modal}>
-        <ReviewForm />
+        <ReviewForm toggleModal={toggleModal} />
       </div>
     </div>,
     revModalRoot
