@@ -8,11 +8,10 @@ import ReviewModal from "../reviewModal/ReviewModal";
 axios.defaults.baseURL = "https://furniture4u.onrender.com";
 
 const Reviewes = () => {
+  const [showModal, setShowModal] = useState(false);
   const [reviews, setReviews] = useState([]);
   const [page, setPage] = useState(1);
   const [loadMore, setLoadMore] = useState(true);
-
-  useEffect(() => { }, []);
 
   useEffect(() => {
     axios
@@ -29,15 +28,12 @@ const Reviewes = () => {
       .catch((error) => console.log(error.message));
   }, [page]);
 
-    const [showModal, setShowModal] = useState(false);
-
     const toggleModal = () => {
       setShowModal(!showModal);
   };
-      const buttonClickHandler = () => {
-        setPage(page + 1);
-      };
-
+    const buttonClickHandler = () => {
+      setPage(page + 1);
+  };
 
   return (
     <section className={css.reviewsContainer}>

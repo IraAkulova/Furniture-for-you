@@ -9,6 +9,7 @@ axios.defaults.baseURL = "https://furniture4u.onrender.com";
 const ContactForm = ({ toggleModal }) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+
   const handleInputChange = (e) => {
     switch (e.target.name) {
       case "name":
@@ -47,7 +48,7 @@ const ContactForm = ({ toggleModal }) => {
           type="text"
           name="name"
           value={name}
-          pattern="/^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/"
+          pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
           onChange={handleInputChange}
@@ -62,7 +63,7 @@ const ContactForm = ({ toggleModal }) => {
           type="tel"
           name="phone"
           value={phone}
-          pattern="^\+?3?8?(0[\s\.-]\d{2}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$"
+          // pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
           onChange={handleInputChange}
