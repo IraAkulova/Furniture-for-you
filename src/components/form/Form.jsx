@@ -1,6 +1,8 @@
 import css from "../form/Form.module.css";
 import { useState } from "react";
 import axios from "axios";
+import Notiflix from "notiflix";
+import "notiflix/dist/notiflix-3.2.6.min.css";
 
 axios.defaults.baseURL = "https://furniture4u.onrender.com";
 
@@ -28,6 +30,7 @@ const ContactForm = ({ toggleModal }) => {
       const response = await axios.post("/api/contacts", { name, phone });
           setName("");
           setPhone("");
+          Notiflix.Notify.success(`We will contact you soon.`);
           toggleModal();
       return response.data;
     } catch (error) {

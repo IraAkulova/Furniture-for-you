@@ -1,5 +1,7 @@
 import css from "./Reviewes.module.css";
 import axios from "axios";
+import Notiflix from "notiflix";
+import "notiflix/dist/notiflix-3.2.6.min.css";
 import { useState, useEffect } from "react";
 import ReviewModal from "../reviewModal/ReviewModal";
 
@@ -8,15 +10,21 @@ axios.defaults.baseURL = "https://furniture4u.onrender.com";
 const Reviewes = () => {
   const [reviews, setReviews] = useState([]);
   const [page, setPage] = useState(1);
-  const [responce, setResponce] = useState([]);
+  const [loadMore, setLoadMore] = useState(true);
+
+  useEffect(() => { }, []);
 
   useEffect(() => {
     axios
       .get(`/api/reviews?page=${page}&limit=3`)
       .then((response) => {
-        setResponce([...response.data.data.reviews]);
-        
-        setReviews((prevRev) => [...prevRev, ...response.data.data.reviews]);
+        setReviews((prevRev) => {
+          if (response.data.data.reviews.length === 0) {
+            Notiflix.Notify.failure(`You have seen all reviews.`);
+            setLoadMore(false);
+          }
+          return [...prevRev, ...response.data.data.reviews]
+        });
       })
       .catch((error) => console.log(error.message));
   }, [page]);
@@ -49,7 +57,7 @@ const Reviewes = () => {
           </li>
         ))}
       </ul>
-      {responce.length !== 0 && (
+      {loadMore !== false && (
         <button
           type="button"
           className={css.reviewBtn}
