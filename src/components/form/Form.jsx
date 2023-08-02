@@ -48,7 +48,8 @@ const ContactForm = ({ toggleModal }) => {
           type="text"
           name="name"
           value={name}
-          pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+          pattern="[a-zA-Z]"
+          // pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
           onChange={handleInputChange}
@@ -63,8 +64,8 @@ const ContactForm = ({ toggleModal }) => {
           type="tel"
           name="phone"
           value={phone}
-          // pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im"
-          title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+          pattern="[0-9]{10}"
+          title="Phone number must be 10 digits without spaces, dashes, parentheses"
           required
           onChange={handleInputChange}
           className={css.field}
