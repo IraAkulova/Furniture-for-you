@@ -3,7 +3,7 @@ import css from "./OurWorks.module.css";
 const OurWorks = () => {
   return (
     <section className={css.worksContainer}>
-      <h2 className={css.worksHeader}>Our works</h2>
+      <h2 className={css.worksHeader}>Our portfolio</h2>
       <ul className={css.works}>
         <li className={css.work}>
           <img

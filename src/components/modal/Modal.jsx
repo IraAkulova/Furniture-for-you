@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import ContactForm from '../form/Form'
 import css from '../modal/Modal.module.css';
 
 const modalRoot = document.querySelector('#modal');
 
-const Modal = ({ toggleModal }) => {
+const Modal = ({ toggleModal, children }) => {
   useEffect(() => {
     const handleKeyDown = e => {
       if (e.code === 'Escape') {
@@ -29,7 +28,7 @@ const Modal = ({ toggleModal }) => {
   return createPortal(
     <div className={css.overlay} onClick={handleOverlayClick}>
       <div className={css.modal}>
-        <ContactForm toggleModal={toggleModal} />
+        {children}
       </div>
     </div>,
     modalRoot

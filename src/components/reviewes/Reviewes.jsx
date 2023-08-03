@@ -2,7 +2,10 @@ import axios from "axios";
 import Notiflix from "notiflix";
 import "notiflix/dist/notiflix-3.2.6.min.css";
 import { useState, useEffect } from "react";
-import ReviewModal from "../reviewModal/ReviewModal";
+// import ReviewModal from "../reviewModal/ReviewModal";
+import Modal from "../modal/Modal";
+import ReviewForm from "../reviewForm/ReviewForm";
+
 import css from "./Reviewes.module.css";
 
 axios.defaults.baseURL = "https://furniture4u.onrender.com";
@@ -37,7 +40,11 @@ const Reviewes = () => {
 
   return (
     <section className={css.reviewsContainer}>
-      {showModal && <ReviewModal toggleModal={toggleModal} />}
+      {showModal && (
+        <Modal toggleModal={toggleModal}>
+          <ReviewForm toggleModal={toggleModal} />
+        </Modal>
+      )}
       <h2 className={css.reviewsHeader}>Our Client Reviews</h2>
       <ul className={css.reviews}>
         {reviews.map(({ _id, name, comment, avatarURL }) => (

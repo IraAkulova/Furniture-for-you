@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Modal from '../modal/Modal';
+import ContactForm from "../form/Form";
 import css from "./Hero.module.css";
 
 const Hero = () => {
@@ -12,7 +13,11 @@ const Hero = () => {
 
     return (
       <section className={css.hero}>
-        {showModal && <Modal toggleModal={toggleModal} />}
+        {showModal && (
+          <Modal toggleModal={toggleModal}>
+            <ContactForm toggleModal={toggleModal} />
+          </Modal>
+        )}
         <h1 className={css.heroHeader}>
           Make your interior more minimalistic & modern
         </h1>
@@ -20,7 +25,13 @@ const Hero = () => {
           Turn your room with panto into a lot more minimalist and modern with
           ease and speed
         </h3>
-        <button className={css.heroBtn} type="button" onClick={()=>{setShowModal(true);}}>
+        <button
+          className={css.heroBtn}
+          type="button"
+          onClick={() => {
+            setShowModal(true);
+          }}
+        >
           Contact Us
         </button>
       </section>
