@@ -53,24 +53,30 @@ const Reviewes = () => {
           </li>
         ))}
       </ul>
-      {loadMore !== false && (
-        <button
-          type="button"
-          className={css.reviewBtn}
-          onClick={buttonClickHandler}
-        >
-          More reviews
-        </button>
-      )}
-      <button
-        type="button"
-        className={css.reviewBtn}
-        onClick={() => {
-          setShowModal(true);
-        }}
-      >
-        Add Review
-      </button>
+      <ul className={css.btnsList}>
+        <li>
+          {loadMore !== false && (
+            <button
+              type="button"
+              className={css.reviewBtn}
+              onClick={buttonClickHandler}
+            >
+              More reviews
+            </button>
+          )}
+        </li>
+        <li>
+          <button
+            type="button"
+            className={css.reviewBtn}
+            onClick={() => {
+              setShowModal(true);
+            }}
+          >
+            Add Review
+          </button>
+        </li>
+      </ul>
     </section>
   );
 };
