@@ -48,8 +48,7 @@ const ContactForm = ({ toggleModal }) => {
           type="text"
           name="name"
           value={name}
-          pattern="[a-zA-Z]"
-          // pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+          pattern="[a-zA-Zа-яА-ЯіІґҐїЇєЄ]+(([' \-][a-zA-Zа-яА-ЯіІґҐїЇєЄ ])?[a-zA-Zа-яА-ЯіІґҐїЇєЄ]*)*"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
           onChange={handleInputChange}

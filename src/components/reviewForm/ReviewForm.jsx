@@ -62,7 +62,7 @@ const ReviewForm = ({toggleModal}) => {
           type="text"
           name="name"
           value={name}
-          //   pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+          pattern="[a-zA-Zа-яА-ЯіІґҐїЇєЄ]+(([' \-][a-zA-Zа-яА-ЯіІґҐїЇєЄ ])?[a-zA-Zа-яА-ЯіІґҐїЇєЄ]*)*"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
           onChange={handleInputChange}
@@ -77,7 +77,7 @@ const ReviewForm = ({toggleModal}) => {
           type="email"
           name="email"
           value={email}
-          //   pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"
+          pattern="[a-zA-Z]+(([ \-\.][a-zA-Z])?[a-zA-Z]*)*@[a-zA-Z0-9]*(\.[a-zA-Z]{2,3})+"
           title="Enter valid email"
           required
           onChange={handleInputChange}
@@ -92,12 +92,12 @@ const ReviewForm = ({toggleModal}) => {
           type="tel"
           name="phone"
           value={phone}
-          //   pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-          title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+          pattern="[0-9]{10}"
+          title="Phone number must be 10 digits without spaces, dashes, parentheses"
           required
           onChange={handleInputChange}
           className={css.reviewField}
-          placeholder="Type your name"
+          placeholder="Type your phone number"
         />
       </label>
       <label className={css.reviewLabel}>
