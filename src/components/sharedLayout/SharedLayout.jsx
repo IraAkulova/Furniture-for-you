@@ -1,9 +1,8 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { Suspense, useState } from "react";
-import css from "./SharedLayout.module.css";
 import Loader from "../../components/loader/Loader";
 import MobileMenu from "../mobileMenu/MobileMenu";
-// import Button from '../button/Button';
+import css from "./SharedLayout.module.css";
 
 const SharedLayout = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -13,11 +12,6 @@ const SharedLayout = () => {
   return (
     <>
       <div className={css.sharedHeader}>
-        {/* <div>
-          <svg width="40" height="40" aria-label="Логотип" className={css.logo}>
-            <use href="../../../public/chair.svg"></use>
-          </svg>
-        </div> */}
         {!showMenu && (
           <button
             type="button"

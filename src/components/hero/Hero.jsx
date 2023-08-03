@@ -1,6 +1,6 @@
-import css from './Hero.module.css';
 import { useState } from "react";
 import Modal from '../modal/Modal';
+import css from "./Hero.module.css";
 
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);

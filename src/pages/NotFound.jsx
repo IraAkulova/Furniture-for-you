@@ -5,7 +5,7 @@ const NotFound = () => {
         style={{
           marginLeft: 500,
           marginTop: 50,
-          color: 'blue',
+          color: "#E58411",
         }}
       >
         404 Not Found

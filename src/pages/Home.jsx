@@ -1,7 +1,7 @@
-import css from './Home.module.css';
 import Hero from '../components/hero/Hero';
 import Features from '../components/features/Features';
-import Advantages from '../components/advantages/Advantages'
+import Advantages from '../components/advantages/Advantages';
+import css from "./Home.module.css";
 
 const Home = () => {    
     return (

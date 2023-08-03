@@ -1,9 +1,9 @@
-import css from "./Reviewes.module.css";
 import axios from "axios";
 import Notiflix from "notiflix";
 import "notiflix/dist/notiflix-3.2.6.min.css";
 import { useState, useEffect } from "react";
 import ReviewModal from "../reviewModal/ReviewModal";
+import css from "./Reviewes.module.css";
 
 axios.defaults.baseURL = "https://furniture4u.onrender.com";
 

@@ -1,6 +1,5 @@
 .contactsContainer{
     display: block;
-    /* max-width: 1200px; */
     height: 71vh;
     border-top: 100px solid rgba(0, 0, 0, 0.8);
     background-color: #eeeeee;
@@ -54,7 +53,6 @@
 @media screen and (min-width: 1200px) {
     .contactsContainer{
     display: flex;
-    /* max-width: 1200px; */
     height: 70vh;
 }
 .contactsMap{

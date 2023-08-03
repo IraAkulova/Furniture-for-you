@@ -14,9 +14,9 @@ const Contacts = () => {
       ></iframe>
       <div className={css.contacts}>
         <ul className={css.contactsTitles}>
-          <li>Наша адреса:</li>
+          <li>Address:</li>
           <li>Email:</li>
-          <li>Телефон:</li>
+          <li>Telephone:</li>
         </ul>
         <ul className={css.contactsList}>
           <li className={css.contact}>
