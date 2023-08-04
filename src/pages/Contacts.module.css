@@ -1,6 +1,6 @@
 .contactsContainer{
     display: block;
-    height: 71vh;
+    /* height: 71vh; */
     border-top: 100px solid rgba(0, 0, 0, 0.8);
     background-color: #eeeeee;
 }
@@ -11,7 +11,7 @@
 }
 .contacts{
     display: flex;
-    margin: 60px 0px;
+    padding: 30px 0px;
 }
 .contactsTitles{
     width: 100px;
