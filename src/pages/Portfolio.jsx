@@ -3,7 +3,7 @@ import Reviewes from "../components/reviewes/Reviewes";
 
 const Portfolio = () => {
   return (
-    <div style={{flexGrow: 1}}>
+    <div>
       <OurWorks />
       <Reviewes />
     </div>

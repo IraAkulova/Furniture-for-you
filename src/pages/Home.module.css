@@ -1,21 +1,3 @@
 .homeContainer{
-    /* max-width: 1200px; */
     overflow-x: hidden;
-    flex-grow: 1;
 }
-
-/* @media screen and (min-width: 480px) {
-  .homeContainer {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .homeContainer {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .homeContainer {
-    max-width: 1200px;
-  }
-} */
