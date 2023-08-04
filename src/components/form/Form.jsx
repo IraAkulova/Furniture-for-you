@@ -63,8 +63,8 @@ const ContactForm = ({ toggleModal }) => {
           type="tel"
           name="phone"
           value={phone}
-          pattern="[0-9]{10}"
-          title="Phone number must be 10 digits without spaces, dashes, parentheses"
+          pattern="([\+38]?[0-9]){10,13}"
+          title="Phone number must be 10 digits without spaces, dashes, parentheses, may start with +38"
           required
           onChange={handleInputChange}
           className={css.field}
