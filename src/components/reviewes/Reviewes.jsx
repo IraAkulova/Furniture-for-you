@@ -1,8 +1,7 @@
 import axios from "axios";
-import Notiflix from "notiflix";
-import "notiflix/dist/notiflix-3.2.6.min.css";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useState, useEffect } from "react";
-// import ReviewModal from "../reviewModal/ReviewModal";
 import Modal from "../modal/Modal";
 import ReviewForm from "../reviewForm/ReviewForm";
 
@@ -22,7 +21,16 @@ const Reviewes = () => {
       .then((response) => {
         setReviews((prevRev) => {
           if (response.data.data.reviews.length === 0) {
-            Notiflix.Notify.failure(`You have seen all reviews.`);
+            toast.info(`You have seen all reviews.`, {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
             setLoadMore(false);
           }
           return [...prevRev, ...response.data.data.reviews]

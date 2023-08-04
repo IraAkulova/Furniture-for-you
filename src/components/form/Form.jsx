@@ -1,6 +1,6 @@
 import axios from "axios";
-import Notiflix from "notiflix";
-import "notiflix/dist/notiflix-3.2.6.min.css";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
 import css from "../form/Form.module.css";
 
@@ -31,7 +31,16 @@ const ContactForm = ({ toggleModal }) => {
       const response = await axios.post("/api/contacts", { name, phone });
       setName("");
       setPhone("");
-      Notiflix.Notify.success(`We will contact you soon.`);
+      toast.success(`We will contact you soon.`, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
       toggleModal();
       return response.data;
     } catch (error) {

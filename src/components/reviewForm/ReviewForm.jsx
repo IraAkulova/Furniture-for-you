@@ -1,7 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-// import Notiflix from "notiflix";
-// import "notiflix/dist/notiflix-3.2.6.min.css";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import css from "../reviewForm/ReviewForm.module.css";
@@ -48,7 +46,6 @@ const ReviewForm = ({toggleModal}) => {
       setPhone("");
       setComment("");
       toggleModal();
-      // Notiflix.Notify.success(`You added a review.`);
       toast.success(`You added a review.`, {
         position: "top-right",
         autoClose: 5000,
