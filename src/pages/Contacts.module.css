@@ -1,7 +1,6 @@
 .contactsContainer{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    display: block;
+    height: 71vh;
     border-top: 100px solid rgba(0, 0, 0, 0.8);
     background-color: #eeeeee;
 }
