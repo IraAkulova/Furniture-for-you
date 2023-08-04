@@ -1,6 +1,7 @@
 .homeContainer{
     /* max-width: 1200px; */
     overflow-x: hidden;
+    flex-grow: 1;
 }
 
 /* @media screen and (min-width: 480px) {

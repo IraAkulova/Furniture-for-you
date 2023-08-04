@@ -10,7 +10,7 @@ const SharedLayout = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <div className={css.sharedLayout}>
+    <>
       <div className={css.sharedHeader}>
         {!showMenu && (
           <button
@@ -73,7 +73,7 @@ const SharedLayout = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
