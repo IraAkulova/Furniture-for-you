@@ -1,3 +1,8 @@
+.sharedLayout{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .sharedHeader{
     display: flex;
     position: fixed;
@@ -11,8 +16,6 @@
   display: block;
   width: 40px;
   height: 40px;
-  /* margin-top: 30px; */
-  /* margin-left: 170px; */
   border: none;
   background-color: transparent;
   fill: #E58411;

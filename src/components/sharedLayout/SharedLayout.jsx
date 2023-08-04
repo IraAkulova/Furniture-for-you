@@ -10,7 +10,7 @@ const SharedLayout = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <>
+    <div className={css.sharedLayout}>
       <div className={css.sharedHeader}>
         {!showMenu && (
           <button
@@ -23,7 +23,9 @@ const SharedLayout = () => {
             </svg>
           </button>
         )}
-        {showMenu && <MobileMenu openMenuBtn={openMenuBtn} showMenu={showMenu} />}
+        {showMenu && (
+          <MobileMenu openMenuBtn={openMenuBtn} showMenu={showMenu} />
+        )}
         <nav className={css.navigation}>
           <NavLink to="/" className={css.link}>
             Home
@@ -71,7 +73,7 @@ const SharedLayout = () => {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
